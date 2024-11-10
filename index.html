@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IT Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="back-button" onclick="window.history.back()">GO BACK</button>
+    <div class="container">
+        
+        <div class="form-container">
+            <form id="resume-form" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="profile-container">
+                        <div class="profile-image-container">
+                            <input type="file" id="image" name="image" accept="image/*">
+                            <img id="profile-picture" src= url('profile.jpeg') alt="Profile Picture" />
+                        </div>
+                        <div class="form-fields">
+                            <label for="name">Full Name:</label>
+                            <input bg-color="black" type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Summary</legend>
+                    <textarea id="summary" name="summary" placeholder="Write a brief summary about yourself" rows="4"
+                        required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Education</legend>
+                    <textarea id="education" name="education" placeholder="Enter your education details" rows="4"
+                        required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Work Experience</legend>
+                    <textarea id="experience" name="experience" placeholder="Enter your work experience" rows="4"
+                        required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Skills</legend>
+                    <textarea id="skills" name="skills" placeholder="Enter your skills" rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Technologies & Tools</legend>
+                    <textarea id="technologies" name="technologies" placeholder="Enter technologies & tools you use"
+                        rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Projects</legend>
+                    <textarea id="projects" name="projects" placeholder="Enter your projects" rows="4" required></textarea>
+                </fieldset>
+
+                <button type="button" id="generate-preview">Generate Preview</button>
+                <button type="button" id="download-pdf">Download PDF</button>
+            </form>
+        </div>
+
+        <div class="preview-container">
+            <h2>Resume Preview</h2>
+            <div id="resume-preview"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

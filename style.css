@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #313030;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 10000000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form Container Styles */
+.form-container {
+    flex: 1;
+    padding: 50px;
+    background-color: rgb(155, 179, 228);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1000px;
+}
+
+form fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+form legend {
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: rgb(26, 16, 16);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Profile Image & Form Layout */
+.profile-container {
+    display:block;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-image-container {
+    margin-right: 10px;
+    text-align: center;
+}
+
+#profile-picture {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.form-fields {
+    flex: 1;
+}
+
+/* Preview Container Styles */
+.preview-container {
+    flex: 1;
+    margin-left: 20px;
+    background-color: rgb(153, 142, 166);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 50px;
+    max-width: 500px;
+}
+
+#resume-preview {
+    font-size: 16px;
+}
+
+#resume-preview h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+.back-button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.back-button:hover{
+    background-color: brown;
+}
+}
+
